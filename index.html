@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Quiz — Delfsblauw</title>
+    <link rel="stylesheet" href="https://use.typekit.net/crp3bux.css">
+    <link href="style/index.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="flash"></div>
+    <!-- START SCREEN -->
+    <div class="screen" id="start-screen">
+        <div class="delft-border animate-in">
+            <div class="motif">✦ ❧ ✦</div>
+            <h1 class="game-title">Guess the image:<br>Cultural Edition!</h1>
+            <p class="game-subtitle">2×2 rounds</p>
+            <p class="game-desc">
+                Each round reveals an image, you have 2 minutes.<br><br>
+                <strong style="color: #7dbc43">50 pts</strong> within 60 sec ·
+                <strong style="color: #fecb09">30 pts</strong> 60–90 sec ·
+                <strong style="color: #f68e20">10 pts</strong> 90–120 sec<br>
+                <span><strong style="color: #FF4C29">0 pts</strong> if time runs out</span>
+            </p>
+            <div style="margin-top:2rem">
+                <button class="btn btn-primary" onclick="startGame()">Begin</button>
+            </div>
+            <div class="motif" style="margin-top:1.5rem">✦ ❧ ✦</div>
+        </div>
+    </div>
+
+    <!-- GAME SCREEN -->
+    <div class="screen hidden" id="game-screen">
+        <div id="bg-image"></div>
+
+        <div id="hud">
+            <div class="hud-pill" id="round-display">Round 1 of 2</div>
+            <div class="hud-pill" id="score-display">Score: <span>0</span></div>
+        </div>
+
+        <div id="timer-wrap">
+            <div id="timer-number">120</div>
+        </div>
+
+        <div id="caption-card">
+            <div id="caption-text">Description text here.</div>
+        </div>
+
+        <div id="guess-btn-wrap">
+            <button class="btn btn-guess" onclick="handleGuess()">✓ Guessed</button>
+        </div>
+        <div id="round-id-display"></div>
+    </div>
+
+    <!-- SCORE SCREEN -->
+    <div class="screen hidden" id="score-screen">
+        <div class="score-inner animate-in">
+            <p class="score-label">You earned</p>
+            <div class="score-points-earned" id="pts-earned">50</div>
+            <p class="score-pts-label">points</p>
+            <div class="score-divider"></div>
+            <p class="score-total">Total: <em id="score-total-val">0</em> pts</p>
+            <p class="score-message" id="score-msg">Great, you got it in time!</p>
+            <button class="btn btn-primary" id="next-btn" onclick="nextRound()">Next Image →</button>
+        </div>
+    </div>
+
+
+    <!-- SWITCH SCREEN -->
+    <div class="screen hidden" id="switch-screen">
+        <div class="switch-inner animate-in">
+            <div class="motif">✦ ❧ ✦</div>
+            <h2 class="switch-title">Switch<br>Places!!</h2>
+            <p class="switch-sub">Player 1 is done</p>
+            <div class="score-divider" style="margin:1.5rem auto"></div>
+            <p class="switch-score">Score: <em id="p1-score-display">0</em> pts</p>
+            <p class="switch-desc">Let the other player stand in front of the screen.<br>2 new images await.</p>
+            <button class="btn btn-primary" style="margin-top:2rem" onclick="startPlayer2()">Player 2 — Begin →</button>
+            <div class="motif" style="margin-top:1.5rem">✦ ❧ ✦</div>
+        </div>
+    </div>
+
+    <!-- END SCREEN -->
+    <div class="screen hidden" id="end-screen">
+        <div class="end-inner animate-in">
+            <div class="motif">✦ ❧ ✦</div>
+            <h2 class="end-title">Quiz Complete</h2>
+            <p class="end-sub">Final Score</p>
+            <div class="end-final-score" id="final-score">0</div>
+            <p class="end-out-of" id="end-out-of">out of 200 points</p>
+            <div class="score-divider" style="margin:1rem auto 0.5rem"></div>
+            <p class="end-player-scores" id="end-player-scores"></p>
+            <p class="end-verdict" id="end-verdict"></p>
+            <button class="btn btn-primary" onclick="restartGame()">Play Again</button>
+            <div class="motif" style="margin-top:1.5rem">✦ ❧ ✦</div>
+        </div>
+    </div>
+
+    <script src="script/index.js"></script>
+</body>
+
+</html>
