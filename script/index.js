@@ -1,78 +1,123 @@
 const ALL_ROUNDS = [
     {
         id: 1,
-        image: 'image/viking.png',
+        image: 'image/COIL_Image_Frame_1.png',
         text: 'A viking riding in a golden carriage, being pulled by cows'
     },
     {
         id: 2,
-        image: 'image/beer.png',
-        text: 'The Little Mermaid eats a meatball (frikadelle) and washes it down with a Heineken.'
+        image: 'image/COIL_Image_Frame_2.png',
+        text: 'The Little Mermaid eats frikadelle (meatball) and drinks Heineken.'
     },
     {
         id: 3,
-        image: 'image/vangogh.png',
+        image: 'image/COIL_Image_Frame_3.png',
         text: 'Van Gogh builds a tulip out of LEGO'
     },
     {
         id: 4,
-        image: 'image/aapje.png',
+        image: 'image/COIL_Image_Frame_4.png',
         text: 'A wooden Kaj Bojesen monkey in a clog (klompen)'
     },
     {
         id: 5,
-        image: 'image/hoptimist.png',
+        image: 'image/COIL_Image_Frame_5.png',
         text: 'Two hoptimists jumping on syrup waffles (stroopwafel)'
     },
     {
         id: 6,
-        image: 'image/flyingdutch.png',
-        text: 'A hotdog is flying through the sky on board the Flying Dutchman'
+        image: 'image/COIL_Image_Frame_6.png',
+        text: 'A hotdog is flying through the sky on the Flying Dutchmanman'
     },
     {
         id: 7,
-        image: 'image/seal.png',
-        text: 'A seal is surfing on a rugbrød'
+        image: 'image/COIL_Image_Frame_7.png',
+        text: 'A seal is surfing on a rugbrød (roggebrood)'
     },
     {
         id: 8,
-        image: 'image/frikandel.png',
+        image: 'image/COIL_Image_Frame_8.png',
         text: 'A frikandel and a kroket are getting married at roskilde festival'
     },
     {
         id: 9,
-        image: 'image/babybel.png',
-        text: 'A gouda and babybell are armwrestling'
+        image: 'image/COIL_Image_Frame_9.png',
+        text: 'A gouda cheese and babybell cheese are armwrestling'
     },
     {
         id: 10,
-        image: 'image/legoland.png',
+        image: 'image/COIL_Image_Frame_10.png',
         text: 'A herring drinking Cocio in Legoland'
     },
     {
         id: 11,
-        image: 'image/nijntje.png',
-        text: 'Miffy(nijntje) playing kings game with Sinterklaas'
+        image: 'image/COIL_Image_Frame_11.png',
+        text: 'Miffy (Nijntje) playng kings game with Sinterklaas'
     },
     {
         id: 12,
-        image: 'image/hagelslag.png',
-        text: 'The Skagen painters eating Hagelslag(sprinkles)'
+        image: 'image/COIL_Image_Frame_12.png',
+        text: 'The Skagen painters eating Hagelslag (sprinkles)'
     },
     {
         id: 13,
-        image: 'image/gracht.png',
-        text: 'It is raining with hagelslag in amsterdam'
+        image: 'image/COIL_Image_Frame_13.png',
+        text: 'It is raining with hagelslag in Amsterdam'
     },
     {
         id: 14,
-        image: 'image/windmolen.png',
-        text: 'A viking is crashing into a mill on a bike'
+        image: 'image/COIL_Image_Frame_14.png',
+        text: 'A viking is crashing into a windmill on a bike'
     },
     {
         id: 15,
-        image: 'image/efteling.png',
-        text: 'The queen of denmark is drinking beer at the Efteling'
+        image: 'image/COIL_Image_Frame_15.png',
+        text: 'The queen of denmark is drinking beer at efteling'
+    },
+    {
+        id: 16,
+        image: 'image/COIL_Image_Frame_16.png',
+        text: 'A happy potato swimming in the waters of Copenhagen'
+    },
+    {
+        id: 17,
+        image: 'image/COIL_Image_Frame_17.png',
+        text: 'A fisherman cycling underwater'
+    },
+    {
+        id: 18,
+        image: 'image/COIL_Image_Frame_18.png',
+        text: 'A swan and a lion are camping together'
+    },
+    {
+        id: 19,
+        image: 'image/COIL_Image_Frame_19.png',
+        text: 'The dutch king wearring an I love Denmark T-Shirt'
+    },
+    {
+        id: 20,
+        image: 'image/COIL_Image_Frame_20.png',
+        text: 'Two bears smearing butter on a piece of bread'
+    },
+    {
+        id: 21,
+        image: 'image/COIL_Image_Frame_21.png',
+        text: 'A bear in a boat going to America'
+    },
+    {
+        id: 22,
+        image: 'image/COIL_Image_Frame_22.png',
+        text: 'The little sandman holding an umbrella'
+    },
+    {
+        id: 23,
+        image: 'image/COIL_Image_Frame_23.png',
+        text: 'A bear is sleeping on a big mushroom'
+    },
+    {
+        id: 24,
+        image: 'image/COIL_Image_Frame_24.png',
+        text: 'The baker on North Street is eating apple pie'
     }
 ];
 
