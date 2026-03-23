@@ -111,8 +111,8 @@ const ALL_ROUNDS = [
     },
     {
         id: 23,
-        image: 'image/COIL_Image_Frame_23.png',
-        text: 'A bear is sleeping on a big mushroom'
+        image: 'image/e0a4c621-e21d-4a0a-92dc-67aeadff6fe1.jfif',
+        text: 'A gnome is sleeping on a big mushroom'
     },
     {
         id: 24,
